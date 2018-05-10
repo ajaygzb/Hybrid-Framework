@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="ReportUtils.RetryListener" />
+	</listeners>
+
+    <parameter name="browsername" value="chrome" />
+	<test name="Testchrome">
+		
+                <parameter name="ModuleName" value="Scheduler" />
+
+		<classes> 
+		<class name="com.bms.M6.Scheduler.TestScheduleAppointment" />
+		<class name="com.bms.M6.Scheduler.TestScheduleAppointmentByView" />
+		<class name="com.bms.M6.Scheduler.TestScheduleFutureAppointment" />
+		<class name="com.bms.M6.Scheduler.TestScheduleMeeting" />
+		<class name="com.bms.M6.Scheduler.TestScheduleMeetingByView" />
+		<class name="com.bms.M6.Scheduler.TestProvierHomePage"/>
+        <class name="com.bms.M6.Scheduler.TestEditEditAllPersonSchedule"/>  
+       <class name="com.bms.M6.Scheduler.TestRecurringAppointment" />
+       <class name="com.bms.M6.Scheduler.TestRecurringMeeting" />
+       <class name="com.bms.M6.Scheduler.TestProviderHomePageLayout" />	
+        <class name="com.bms.M6.Scheduler.TestProviderHomePagetopMenu"/>
+        <class name="com.bms.M15.ArrivalAlert.TestArrivalAlert"/>
+        <class name="com.bms.M15.ArrivalAlert.TestGroupAppointment"/>
+        <class name="com.bms.M15.ArrivalAlert.TestPolicyChargeQueue"/>
+        <class name="com.bms.M15.ArrivalAlert.TestReoccurringAppointments"/>
+        <class name="com.bms.M15.ArrivalAlert.TestPatientView"/>
+        <class name="com.bms.M15.ArrivalAlert.TestDifferentTypeOfAppointmentsOnPracticeView"/>
+        <class name="com.bms.M15.ArrivalAlert.DifferentAppointmentTypesOnLocationView"/>
+	</classes>
+</test> 
+<!-- Test -->
+</suite> <!-- Suite -->

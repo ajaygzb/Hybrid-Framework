@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <listeners>
+        <listener class-name="ReportUtils.RetryListener"/>
+  </listeners>
+  
+   <parameter name="browsername" value="chrome"/>
+  <test name="Testchrome">
+  
+   <parameter name="ModuleName" value="Regression1"/>
+  
+  
+  <!-- This suite contains Module: Login,Patient,Cases,Insurances,CreateNote,Scheduler -->
+  
+      <classes>   
+        <class name="com.bms.M1.Login.TestLoginUnsuccessfull" />
+		<class name="com.bms.M1.Login.TestValidLogin" />
+	 	<class name="com.bms.M2.Patient.TestPatientAdd" />
+		<class name="com.bms.M2.Patient.TestMedicare" />
+		<class name="com.bms.M2.Patient.TestInactivatePatient" />
+		<class name="com.bms.M2.Patient.TestSearchPatient" />
+		<class name="com.bms.M3.Cases.TestCaseEdit" />
+		<class name="com.bms.M3.Cases.TestCaseForInjuryType" /> 
+		<class name="com.bms.M3.Cases.TestCaseHistory" />
+		<class name="com.bms.M3.Cases.TestCaseInactive" />
+		<class name="com.bms.M3.Cases.TestRemovingRequiredFeildsInCase" />
+		<class name="com.bms.M3.Cases.TestCaseWithCompleteInfo" />	
+		<class name="com.bms.M3.Cases.TestCloneCase" />
+		<class name="com.bms.M4.Insurances.TestAddCompleteInsurance" />
+		<class name="com.bms.M4.Insurances.TestAddPatientWithPrimaryinsurence" />
+		<class name="com.bms.M4.Insurances.TestCaseInsurances" />
+		<class name="com.bms.M4.Insurances.TestRemoveInsurance" />
+		<class name="com.bms.M4.Insurances.TestMSPtypeForMedicareInsurance" />
+		<class name="com.bms.M5.Notes.TestCreateNote" />	
+		<class name="com.bms.M5.Notes.TestCreateNoteNoProvider"/>
+		<class name="com.bms.M5.Notes.TestTemplateEMR" />
+		<class name="com.bms.M6.Scheduler.TestScheduleAppointment" />
+		<class name="com.bms.M6.Scheduler.TestScheduleAppointmentByView" />
+		<class name="com.bms.M6.Scheduler.TestScheduleFutureAppointment" />
+		<class name="com.bms.M6.Scheduler.TestScheduleMeeting" />
+		<class name="com.bms.M6.Scheduler.TestScheduleMeetingByView"/>
+
+    </classes>
+  </test>
+
+  <!-- Test -->
+</suite> <!-- Suite -->

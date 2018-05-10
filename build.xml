@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="testreport" name="SoapUIAutomation">
+<target name="SoapUI">
+<exec dir="." executable="C:\Program Files (x86)\SmartBear\SoapUI-5.4.0\bin\testrunner.bat">
+<arg line="-r -j -f 'C:\Users\ajay.kumar4\Desktop\SOAPdata\DEMO' -sSomokeSuite 'C:\Users\ajay.kumar4\Desktop\SOAPdata\Project_BMS-POC-soapui-project.xml'"></arg>
+</exec>
+</target>
+
+<target name="testreport" depends="SoapUI">
+<junitreport todir="C:\Users\ajay.kumar4\Desktop\SOAPdata\DEMO">
+<fileset dir="C:\Users\ajay.kumar4\Desktop\SOAPdata\DEMO">
+<include name="Test-*.xml"/>
+</fileset>
+<report todir="C:\Users\ajay.kumar4\Desktop\SOAPdata\DEMO\HTML">
+</report>
+</junitreport>
+</target>
+</project>

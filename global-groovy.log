@@ -1,0 +1,20 @@
+2018-04-17 11:21:04,681 INFO  [log] C:\Users\ajay.kumar4\Desktop\SOAPdata
+2018-04-17 11:21:04,743 INFO  [log] Read 3 test values from c:\\data\\GOP.csv
+2018-04-17 11:21:04,758 INFO  [log] **************test 1 start*************************
+2018-04-17 11:21:14,472 INFO  [log] *************Fetch actual Result *****************************Success
+2018-04-17 11:21:14,472 INFO  [log] actual result in XML = Success
+2018-04-17 11:21:14,472 INFO  [log] expected result in file = Success
+2018-04-17 11:21:14,473 INFO  [log] Result as expected = true
+2018-04-17 11:21:14,473 INFO  [log] **************test 1 done*************************
+2018-04-17 11:21:14,473 INFO  [log] **************test 2 start*************************
+2018-04-17 11:21:14,475 INFO  [log] *************Fetch actual Result *****************************Success
+2018-04-17 11:21:14,475 INFO  [log] actual result in XML = Success
+2018-04-17 11:21:14,475 INFO  [log] expected result in file = Success
+2018-04-17 11:21:14,475 INFO  [log] Result as expected = true
+2018-04-17 11:21:14,475 INFO  [log] **************test 2 done*************************
+2018-04-17 11:21:14,475 INFO  [log] **************test 3 start*************************
+2018-04-17 11:21:14,477 INFO  [log] *************Fetch actual Result *****************************Success
+2018-04-17 11:21:14,477 INFO  [log] actual result in XML = Success
+2018-04-17 11:21:14,477 INFO  [log] expected result in file = Success
+2018-04-17 11:21:14,477 INFO  [log] Result as expected = true
+2018-04-17 11:21:14,477 INFO  [log] **************test 3 done*************************

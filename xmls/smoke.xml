@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <!-- <listeners>
+        <listener class-name="ReportUtils.RetryListener"/>
+  </listeners> -->
+   <parameter name="browsername" value="chrome" /> 
+  <test name="Testchrome">
+  
+  <parameter name="ModuleName" value="Smoke" />
+  
+    <classes>
+        <class name="com.bms.M1.Login.TestValidLogin" /> 
+        <class name="com.bms.M1.Login.TestLoginUnsuccessfull" />
+       <!--  <class name="com.bms.M6.Scheduler.TestScheduleAppointment">
+        <methods>
+        <include name="testQuickSchedule" />
+        <include name="testValidateNewCaseAppointment" />
+        </methods>
+        </class>
+        <class name="com.bms.M6.Scheduler.TestScheduleMeeting">
+        <methods>
+        <include name="QuickScheduleMeeting" />
+        <include name="CancelAppointment" />
+         <include name="NoShowAppointment" /> 
+        </methods>
+        </class>
+        <class name="com.bms.M3.Cases.TestCaseEdit">
+        <methods>
+        <include name="CaseSaveWithNoInfo" />       
+        </methods>
+        </class>
+        <class name="com.bms.M3.Cases.TestCloneCase">
+        <methods>
+        <include name="testCloneIncompleteActiveCase" />       
+        </methods>
+        </class> 
+        <class name="com.bms.M1.Login.TestValidLogin" /> 
+        <class name="com.bms.M1.Login.TestLoginUnsuccessfull" />
+        <class name="com.bms.M2.Patient.TestPatientAdd"/>
+        <class name="com.bms.M2.Patient.TestSearchPatient" />
+        <class name="com.bms.M11.EMR.TestEndtoEndVisit"/>
+        <class name="com.bms.M9.AddCharges.TestAddAccountNotes"/>
+        <class name="PerformanceTest.TestEditFunctionality"/>
+        <class name="com.bms.M6.Scheduler.TestProviderHomePageLayout">
+        <methods>
+        <include name="TestProviderHomePageLayoutValidation" />
+        </methods>
+        </class> -->
+    </classes>
+  </test>    
+  <!-- Test -->
+</suite> <!-- Suite -->

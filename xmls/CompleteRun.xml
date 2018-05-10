@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="ReportUtils.RetryListener" />
+	</listeners>
+
+	<parameter name="browsername" value="chrome" />
+	<test name="Testchrome">
+
+		<parameter name="ModuleName" value="CompleteRun" />
+
+		<classes>
+
+			<class name="com.bms.M5.Notes.TestCreateNoteWarningMessage" />
+			<class name="com.bms.M5.Notes.TestTemplateEMR" />
+			<class name="com.bms.M6.Scheduler.TestScheduleAppointment" />
+			<class name="com.bms.M6.Scheduler.TestScheduleAppointmentByView" />
+			<class name="com.bms.M6.Scheduler.TestScheduleFutureAppointment" />
+			<class name="com.bms.M6.Scheduler.TestScheduleMeeting" />
+			<class name="com.bms.M6.Scheduler.TestScheduleMeetingByView" />
+			<class name="com.bms.M6.Scheduler.TestProvierHomePage" />
+			<class name="com.bms.M6.Scheduler.TestEditEditAllPersonSchedule" />
+			<class name="com.bms.M6.Scheduler.TestRecurringAppointment" />
+			<class name="com.bms.M6.Scheduler.TestRecurringMeeting" />
+			<class name="com.bms.M6.Scheduler.TestProviderHomePageLayout" />
+			<class name="com.bms.M6.Scheduler.TestProviderHomePagetopMenu" />
+			<class name="com.bms.M6.Scheduler.TestProviderHomePageNoteStatusColor" />
+			<class name="com.bms.M7.APage.TestAPageEditPendingNote" />
+			<class name="com.bms.M7.APage.TestAPage" />
+			<class name="com.bms.M7.APage.TestAPageCheckFLRTab" />
+			<class name="com.bms.M7.APage.TestAPageCurrentStatusList" />
+			<class name="com.bms.M7.APage.TestAPageDischargeFLR" />
+			<class name="com.bms.M7.APage.TestAPageDropDownValidations" />
+			<class name="com.bms.M7.APage.TestAPageGCodeValidationOT" />
+			<class name="com.bms.M7.APage.TestAPageGCodeValidationPT" />
+			<class name="com.bms.M7.APage.TestAPageUpdateGoalTab" />
+			<class name="com.bms.M7.APage.TestAPageLockFunctionality" />
+			<class name="com.bms.M8.FLR.TestCreateCompleteNote" />
+			<class name="com.bms.M8.FLR.TestFLRdataCarryForward1" />
+			<class name="com.bms.M8.FLR.TestFLRdataCarryForward2" />
+			<class name="com.bms.M8.FLR.TestFLRTabNotDisplayRTProvider" />
+			<class name="com.bms.M8.FLR.TestFLR10THVisitPromtWithAddendum" />
+			<class name="com.bms.M8.FLR.TestFLR10THVisitPromtNoAddendum" />
+			<class name="com.bms.M8.FLR.TestFLR10THVisitPromtAllNotesFinalized" />
+			<class name="com.bms.M8.FLR.TestHardStopMessagevalidation3" />
+			<class name="com.bms.M8.FLR.TestHardStopMessagevalidation2" />
+			<class name="com.bms.M8.FLR.TestHardStopMessagevalidation" />
+			<class name="com.bms.M9.AddCharges.TestAddAccountNotes" />
+			<class name="com.bms.M9.AddCharges.TestAddChargesWithDXChanges" />
+			<class name="com.bms.M9.AddCharges.TestCPTCodeSearch" />
+			<class name="com.bms.M9.AddCharges.TestDeafults" />
+			<class name="com.bms.M9.AddCharges.TestInsOverpayment" />
+			<class name="com.bms.M9.AddCharges.TestPatientRefund" />
+			<class name="com.bms.M9.AddCharges.TestPaymentDropDowns" />
+			<class name="com.bms.M9.AddCharges.TestPayments" />
+			<class name="com.bms.M9.AddCharges.TestPermissionsAddCharges" />
+			<class name="com.bms.M9.AddCharges.TestValidateErrorMessageAddCharges" />
+			<class name="com.bms.M9.AddCharges.TestValidateKxModifierPrompt" />
+			<class name="com.bms.M9.AddCharges.TestValidatePre_AuthCounter" />
+			<class name="com.bms.M9.AddCharges.TestViewChargesBMSUser" />
+			<class name="com.bms.M9.AddCharges.TestViewChargesClinicUser" />
+			<class name="com.bms.M9.AddCharges.TestViewChargesCustomerUser" />
+			<class name="com.bms.M9.AddCharges.TestViewChargesPartnerUser" />
+			<class name="com.bms.M10.SPage.TestCaseSpageR" />
+			<class name="com.bms.M10.SPage.TestPatientReportlibrary" />
+			<class name="com.bms.M10.SPage.TestSPageLock" />
+			<class name="com.bms.M11.EMR.TestPhraseLibraries" />
+			<class name="com.bms.M11.EMR.TestMyExamTemplate" />
+			<class name="com.bms.M11.EMR.TestInterventionLibraries" />
+			<class name="com.bms.M11.EMR.TestNoDigitalSignature" />
+			<class
+				name="com.bms.M11.EMR.TestNonclinicalStaffwithAllowedCheckInclinicsetupIsNotSelected" />
+			<class
+				name="com.bms.M11.EMR.TestNonClinicalStaffWithInsuranceClassCheckBoxNotSelectedTestCase" />
+			<class name="com.bms.M11.EMR.TestNonoClinicalStafTestCases" />
+			<class name="com.bms.M11.EMR.TestSignandAttachScanDocuments" />
+			<class name="com.bms.M11.EMR.TestSignandFinalize" />
+			<class name="com.bms.M11.EMR.TestSignandFinalizeAddendum" />
+			<class name="com.bms.M11.EMR.TestSignNoteWithCompleteSOAPdata" />
+			<class name="com.bms.M11.EMR.TestSignNoteWithDiffrentUsers" />
+			<class name="com.bms.M11.EMR.TestSignNoteWithCompleteSOAPdataWithAddendum" />
+			<class name="com.bms.M11.EMR.TestStudentProviderFinalizeTestCases" />
+			<class name="com.bms.M11.EMR.TestStudentProviderInInsuranceClassTestCases" />
+			<class
+				name="com.bms.M11.EMR.TestStudentProviderwithAllowedCheckInclinicsetupIsNotSelected" />
+			<class name="com.bms.M11.EMR.TestTreatingProviderFinalize" />
+			<class
+				name="com.bms.M11.EMR.TestTreatingProviderFinalizeWithAllowPTATofinalizeInInsuranceClassTestCases" />
+			<class
+				name="com.bms.M11.EMR.TestTreatingProviderwithAllowedCheckInclinicsetupIsNotSelected" />
+			<class
+				name="com.bms.M11.EMR.TestNonClinicalStaffWithInSuranceClassUnCheckedAndClinicalSetupUnChecked" />
+			<class
+				name="com.bms.M11.EMR.TestStudentWithInsuranceClassUnCheckedAndClinicalSetupUnChecked" />
+			<class
+				name="com.bms.M11.EMR.TestTreatingProviderWithInSuranceClassUnCheckedAndClinicalSetupUnChecked" />
+			<class name="com.bms.M12.Financial.TestCheckFinancialTab" />
+			<class name="com.bms.M13.Task.TestManageMyAccount" />
+			<class name="com.bms.M13.Task.TestWaitList" />
+			<class name="com.bms.M13.Task.TestEditGlobaltask" />
+			<class name="com.bms.M13.Task.TestTaskFunctionality" />
+			<class name="com.bms.M13.Task.TestLock" />
+			<class name="com.bms.M13.Task.TestAssigneeField" />
+			<class name="com.bms.M13.Task.TestAddTaskByRole" />
+			<class name="com.bms.M13.Task.TestChangeCompany" />
+			<class name="com.bms.M3.Cases.TestCaseHistory" />
+			<class name="com.bms.M3.Cases.TestCaseInactive" />
+			<class name="com.bms.M13.Task.TestLock" />
+			<class name="com.bms.M14.PQRS.TestPQRSHardstop_2" />
+			<class name="com.bms.M14.PQRS.TestPQRSHardstop" />
+			<class name="com.bms.M14.PQRS.TestPQRSAvailability" />
+			<class name="com.bms.M14.PQRS.TestPQRSprompt" />
+			<class name="com.bms.M14.PQRS.TestPQRSVisitType" />
+			<class
+				name="com.bms.M15.ArrivalAlert.DifferentAppointmentTypesOnLocationView" />
+			<class
+				name="com.bms.M15.ArrivalAlert.TestDifferentTypeOfAppointmentsOnPracticeView" />
+			<class name="com.bms.M15.ArrivalAlert.TestPolicyChargeQueue" />
+			<class name="com.bms.M15.ArrivalAlert.TestArrivalAlert" />
+			<class name="com.bms.M15.ArrivalAlert.TestGroupAppointment" />
+			<class name="com.bms.M1.Login.TestLoginUnsuccessfull" />
+			<class name="com.bms.M1.Login.TestValidLogin" />
+			<class name="com.bms.M2.Patient.TestPatientAdd" />
+			<class name="com.bms.M2.Patient.TestMedicare" />
+			<class name="com.bms.M2.Patient.TestInactivatePatient" />
+			<class name="com.bms.M2.Patient.TestSearchPatient" />
+			<class name="com.bms.M2.Patient.TestPatientHeader" />
+			<class name="com.bms.M3.Cases.TestCaseEdit" />
+			<class name="com.bms.M3.Cases.TestCaseForInjuryType" />
+			<class name="com.bms.M3.Cases.TestCaseHistory" />
+			<class name="com.bms.M3.Cases.TestCaseInactive" />
+			<class name="com.bms.M3.Cases.TestRemovingRequiredFeildsInCase" />
+			<class name="com.bms.M3.Cases.TestCaseWithCompleteInfo" />
+			<class name="com.bms.M3.Cases.TestCloneCase" />
+			<class name="com.bms.M3.Cases.TestFoto" />
+			<class name="com.bms.M4.Insurances.TestAddCompleteInsurance" />
+			<class name="com.bms.M4.Insurances.TestAddPatientWithPrimaryinsurence" />
+			<class name="com.bms.M4.Insurances.TestCaseInsurances" />
+			<class name="com.bms.M4.Insurances.TestRemoveInsurance" />
+			<class name="com.bms.M4.Insurances.TestMSPtypeForMedicareInsurance" />
+			<class name="com.bms.M5.Notes.TestCreateNote" />
+			<class name="com.bms.M5.Notes.TestCreateNoteNoProvider" />
+
+		</classes>
+	</test>
+
+	<!-- Test -->
+</suite> <!-- Suite -->

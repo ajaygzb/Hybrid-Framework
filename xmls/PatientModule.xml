@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="ReportUtils.RetryListener" />
+	</listeners>
+
+      <parameter name="browsername" value="chrome" />
+	<test name="Testchrome">
+		
+                <parameter name="ModuleName" value="Patient" />
+
+		<classes> 
+		<class name="com.bms.M2.Patient.TestPatientAdd" />
+		<class name="com.bms.M2.Patient.TestMedicare" />
+		<class name="com.bms.M2.Patient.TestInactivatePatient" />
+		<class name="com.bms.M2.Patient.TestSearchPatient" />	
+		<class name="com.bms.M2.Patient.TestPatientHeader" />
+	</classes>
+</test> 
+<!-- Test -->
+</suite> <!-- Suite -->

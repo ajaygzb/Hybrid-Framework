@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="ReportUtils.RetryListener" />
+	</listeners>
+
+    <parameter name="browsername" value="chrome" />
+	<test name="Testchrome">
+		
+                <parameter name="ModuleName" value="FLR" />
+		<classes> 
+		<class name="com.bms.M8.FLR.TestFLRdataCarryForward1"/>
+		<class name="com.bms.M8.FLR.TestFLRdataCarryForward2"/>
+		<class name="com.bms.M8.FLR.TestFLRTabNotDisplayRTProvider"/> 
+		<class name="com.bms.M8.FLR.TestFLR10THVisitPromtWithAddendum"/> 
+		<class name="com.bms.M8.FLR.TestFLR10THVisitPromtNoAddendum"/> 
+		<class name="com.bms.M8.FLR.TestFLR10THVisitPromtAllNotesFinalized"/>  
+		<class name="com.bms.M8.FLR.TestHardStopMessagevalidation3"/> 
+		<class name="com.bms.M8.FLR.TestHardStopMessagevalidation2"/> 
+		<class name="com.bms.M8.FLR.TestHardStopMessagevalidation"/>
+			
+	</classes>
+</test> 
+<!-- Test -->
+</suite> <!-- Suite -->

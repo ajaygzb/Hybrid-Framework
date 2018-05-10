@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="ModuleName" value="Smoke"/>
+  <parameter name="browsername" value="chrome"/>
+  <test name="Testchrome">
+    <parameter name="ModuleName" value="Smoke"/>
+    <classes>
+      <class name="com.bms.M1.Login.TestValidLogin"/>
+      <class name="com.bms.M1.Login.TestLoginUnsuccessfull"/>
+    </classes>
+  </test> <!-- Testchrome -->
+  <test name="Testchrome(failed)">
+    <parameter name="ModuleName" value="Smoke"/>
+    <classes>
+      <class name="com.bms.M1.Login.TestValidLogin">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="testvalidlogin"/>
+          <include name="testHyperlinks"/>
+        </methods>
+      </class> <!-- com.bms.M1.Login.TestValidLogin -->
+      <class name="com.bms.M1.Login.TestLoginUnsuccessfull">
+        <methods>
+          <include name="TestInvalidLogin"/>
+        </methods>
+      </class> <!-- com.bms.M1.Login.TestLoginUnsuccessfull -->
+    </classes>
+  </test> <!-- Testchrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

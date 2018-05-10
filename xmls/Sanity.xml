@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!--   <listeners>
+        <listener class-name="ReportUtils.RetryListener"/>
+  </listeners> -->
+  
+  
+  
+ 
+
+<!--  <test name="Testfirefox">
+  <parameter name="browser" value="firefox" />
+  
+    <classes>
+     
+        <class name="com.bms.M2.Patient.TestPatientAdd" />
+        <class name="com.bms.M3.Cases.TestCaseWithCompleteInfo" />	
+        <class name="com.bms.M3.Cases.TestCloneCase" />
+        <class name="com.bms.M1.Login.TestValidLogin" />     
+        <class name="com.bms.M2.Patient.TestSearchPatient" />
+        <class name="com.bms.M6.Scheduler.TestScheduleAppointment" />
+        <class name="com.bms.M6.Scheduler.TestScheduleMeeting" />
+        <class name="com.bms.M5.Notes.TestCreateNote" />	
+       
+      
+    </classes>
+  </test> -->
+  
+   <parameter name="browsername" value="chrome" />
+  <test name="Testchrome">
+ 
+  <parameter name="ModuleName" value="Sanity" />
+  
+    <classes>
+      
+        <class name="com.bms.M1.Login.TestValidLogin" /> 
+        <class name="com.bms.M1.Login.TestLoginUnsuccessfull" />
+        <class name="com.bms.M2.Patient.TestPatientAdd" />
+        <class name="com.bms.M2.Patient.TestSearchPatient" />
+        <class name="com.bms.M3.Cases.TestCaseWithCompleteInfo">
+        <methods>
+        <include name="CaseAsCompleted" />
+        </methods>
+        </class>	
+        <class name="com.bms.M3.Cases.TestCloneCase">
+        <methods>
+        <include name="testCloneIncompleteActiveCase" />       
+        </methods>
+        </class>
+        <class name="com.bms.M5.Notes.TestCreateNote">
+        <methods>
+        <include name="SubsequentNoteVisitTypeDDL" />
+        </methods>
+        </class>
+        <class name="com.bms.M5.Notes.TestCreateNoteWarningMessage">
+        <methods>
+        <include name="Note_Unlock" />
+        </methods>
+        </class>
+        <class name="com.bms.M6.Scheduler.TestScheduleAppointment">
+        <methods>
+        <include name="testQuickSchedule" />
+        <include name="testValidateNewCaseAppointment" />
+        </methods>
+        </class>
+        <class name="com.bms.M6.Scheduler.TestScheduleMeeting">
+        <methods>
+        <include name="CancelAppointment" />
+         <include name="NoShowAppointment" /> 
+        </methods>
+        </class>
+        <class name="com.bms.M7.APage.TestAPage">
+        <methods>
+        <include name="add_diagnosis_and_case_updates" />
+        </methods>
+        </class>
+         <class name="com.bms.M7.APage.TestAPageLockFunctionality">
+        <methods>
+        <include name="Note_UnlockApage" />
+        </methods>
+        </class>
+        <class name="com.bms.M8.FLR.TestFLRdataCarryForward1">
+        <methods>
+        <include name="AddendumDataOnFLRDataSubsequentNoteDisplay" />
+        </methods>
+        </class>
+        <class name="com.bms.M8.FLR.TestFLR10THVisitPromtAllNotesFinalized">
+        <methods>
+        <include name="FLR10thVisitValidateHardStopmessage" />
+        </methods>
+        </class>
+         <class name="com.bms.M9.AddCharges.TestValidateErrorMessageAddCharges">
+        <methods>
+        <include name="ValidateMandatoryFieldsAddCharges" />
+        </methods>
+        </class>			   
+    </classes>
+  </test>
+  
+  
+  
+  
+  
+  
+  
+ <!--  <test name="Ipad">
+  <parameter name="browser" value="tabletchrome" />
+    <classes>
+        <class name="com.bms.M2.Patient.TestPatientAdd" />
+      	<class name="com.bms.M3.Cases.TestCaseEdit" />
+        <class name="com.bms.M3.Cases.TestCaseWithCompleteInfo" />	
+        <class name="com.bms.M3.Cases.TestCloneCase" />
+        <class name="com.bms.M1.Login.TestValidLogin" />     
+        <class name="com.bms.M2.Patient.TestSearchPatient" />
+        <class name="com.bms.M6.Scheduler.TestScheduleAppointment" />
+        <class name="com.bms.M6.Scheduler.TestScheduleMeeting" />
+        <class name="com.bms.M5.Notes.TestCreateNote" />
+          </classes>	
+  </test>        -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+        <listener class-name="ReportUtils.RetryListener"/>
+  </listeners>
+  
+   <parameter name="browsername" value="chrome" />
+  <test name="Testchrome">
+  
+   <parameter name="ModuleName" value="TestErrorMessages" />
+  
+    <classes>
+    <class name="com.bms.M1.Login.TestLoginUnsuccessfull"/>
+    <class name="com.bms.M2.Patient.TestPatientAdd">
+    <methods>
+    <include name="testaddpatientMandatoryfields">
+    </include>
+    </methods>
+    </class>
+    <class name="com.bms.M2.Patient.TestMedicare" />
+    <class name="com.bms.M3.Cases.TestRemovingRequiredFeildsInCase"/>
+    <class name="com.bms.M4.Insurances.TestRemoveInsurance">
+     <methods>
+    <include name="testremovePrimaryInsurance">
+    </include>
+    </methods>
+    </class>
+    <class name="com.bms.M5.Notes.TestCreateNoteWarningMessage"/> 
+    <class name="com.bms.M6.Scheduler.TestScheduleAppointment">
+     <methods>
+    <include name="testAddpatientMandatoryfieldsScheduler">
+    </include>
+    </methods>
+    </class>
+    <class name="com.bms.M7.APage.TestAPage">
+       <methods>
+    <include name="required_field_indicators">
+    </include>
+    </methods>
+    </class>
+    <class name="com.bms.M8.FLR.TestFLR10THVisitPromtWithAddendum"/>
+    <class name="com.bms.M8.FLR.TestHardStopMessagevalidation3"/> 
+	<class name="com.bms.M8.FLR.TestHardStopMessagevalidation2"/> 
+	<class name="com.bms.M8.FLR.TestHardStopMessagevalidation"/>
+	<class name="com.bms.M9.AddCharges.TestValidateErrorMessageAddCharges"/>
+    <class name="com.bms.M9.AddCharges.TestValidateKxModifierPrompt"/>
+    <class name="com.bms.M9.AddCharges.TestValidatePre_AuthCounter"/>
+    <class name="com.bms.M10.SPage.TestCaseSpageR">
+       <methods>
+    <include name="required_field_indicators_initial_visit">
+    </include>
+    </methods>
+    </class>
+       <class name="com.bms.M11.EMR.TestNoDigitalSignature">
+       <methods>
+    <include name="NoteFinalizeWithoutDigitalSignature">
+    </include>
+    </methods>
+    </class>
+    <class name="com.bms.M11.EMR.TestSignNoteWithCompleteSOAPdata"/>
+     <class name="com.bms.M14.PQRS.TestPQRSHardstop_2"/>
+     <class name="com.bms.M14.PQRS.TestPQRSHardstop"/>
+     <class name="com.bms.M14.PQRS.TestPQRSprompt" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </classes>
+  </test>
+
+  <!-- Test -->
+</suite> <!-- Suite -->

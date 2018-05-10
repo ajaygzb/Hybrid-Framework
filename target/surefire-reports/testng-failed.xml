@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <parameter name="ModuleName" value="CompleteRun"/>
+  <parameter name="browsername" value="chrome"/>
+  <listeners>
+    <listener class-name="ReportUtils.RetryListener"/>
+  </listeners>
+  <test name="Testchrome">
+    <parameter name="ModuleName" value="CompleteRun"/>
+    <classes>
+      <class name="com.bms.M5.Notes.TestCreateNoteWarningMessage"/>
+      <class name="com.bms.M5.Notes.TestTemplateEMR"/>
+      <class name="com.bms.M6.Scheduler.TestScheduleAppointment"/>
+      <class name="com.bms.M6.Scheduler.TestScheduleAppointmentByView"/>
+      <class name="com.bms.M6.Scheduler.TestScheduleFutureAppointment"/>
+      <class name="com.bms.M6.Scheduler.TestScheduleMeeting"/>
+      <class name="com.bms.M6.Scheduler.TestScheduleMeetingByView"/>
+      <class name="com.bms.M6.Scheduler.TestProvierHomePage"/>
+      <class name="com.bms.M6.Scheduler.TestEditEditAllPersonSchedule"/>
+      <class name="com.bms.M6.Scheduler.TestRecurringAppointment"/>
+      <class name="com.bms.M6.Scheduler.TestRecurringMeeting"/>
+      <class name="com.bms.M6.Scheduler.TestProviderHomePageLayout"/>
+      <class name="com.bms.M6.Scheduler.TestProviderHomePagetopMenu"/>
+      <class name="com.bms.M6.Scheduler.TestProviderHomePageNoteStatusColor"/>
+      <class name="com.bms.M7.APage.TestAPageEditPendingNote"/>
+      <class name="com.bms.M7.APage.TestAPage"/>
+      <class name="com.bms.M7.APage.TestAPageCheckFLRTab"/>
+      <class name="com.bms.M7.APage.TestAPageCurrentStatusList"/>
+      <class name="com.bms.M7.APage.TestAPageDischargeFLR"/>
+      <class name="com.bms.M7.APage.TestAPageDropDownValidations"/>
+      <class name="com.bms.M7.APage.TestAPageGCodeValidationOT"/>
+      <class name="com.bms.M7.APage.TestAPageGCodeValidationPT"/>
+      <class name="com.bms.M7.APage.TestAPageUpdateGoalTab"/>
+      <class name="com.bms.M7.APage.TestAPageLockFunctionality"/>
+      <class name="com.bms.M8.FLR.TestCreateCompleteNote"/>
+      <class name="com.bms.M8.FLR.TestFLRdataCarryForward1"/>
+      <class name="com.bms.M8.FLR.TestFLRdataCarryForward2"/>
+      <class name="com.bms.M8.FLR.TestFLRTabNotDisplayRTProvider"/>
+      <class name="com.bms.M8.FLR.TestFLR10THVisitPromtWithAddendum"/>
+      <class name="com.bms.M8.FLR.TestFLR10THVisitPromtNoAddendum"/>
+      <class name="com.bms.M8.FLR.TestFLR10THVisitPromtAllNotesFinalized"/>
+      <class name="com.bms.M8.FLR.TestHardStopMessagevalidation3"/>
+      <class name="com.bms.M8.FLR.TestHardStopMessagevalidation2"/>
+      <class name="com.bms.M8.FLR.TestHardStopMessagevalidation"/>
+      <class name="com.bms.M9.AddCharges.TestAddAccountNotes"/>
+      <class name="com.bms.M9.AddCharges.TestAddChargesWithDXChanges"/>
+      <class name="com.bms.M9.AddCharges.TestCPTCodeSearch"/>
+      <class name="com.bms.M9.AddCharges.TestDeafults"/>
+      <class name="com.bms.M9.AddCharges.TestInsOverpayment"/>
+      <class name="com.bms.M9.AddCharges.TestPatientRefund"/>
+      <class name="com.bms.M9.AddCharges.TestPaymentDropDowns"/>
+      <class name="com.bms.M9.AddCharges.TestPayments"/>
+      <class name="com.bms.M9.AddCharges.TestPermissionsAddCharges"/>
+      <class name="com.bms.M9.AddCharges.TestValidateErrorMessageAddCharges"/>
+      <class name="com.bms.M9.AddCharges.TestValidateKxModifierPrompt"/>
+      <class name="com.bms.M9.AddCharges.TestValidatePre_AuthCounter"/>
+      <class name="com.bms.M9.AddCharges.TestViewChargesBMSUser"/>
+      <class name="com.bms.M9.AddCharges.TestViewChargesClinicUser"/>
+      <class name="com.bms.M9.AddCharges.TestViewChargesCustomerUser"/>
+      <class name="com.bms.M9.AddCharges.TestViewChargesPartnerUser"/>
+      <class name="com.bms.M10.SPage.TestCaseSpageR"/>
+      <class name="com.bms.M10.SPage.TestPatientReportlibrary"/>
+      <class name="com.bms.M10.SPage.TestSPageLock"/>
+      <class name="com.bms.M11.EMR.TestPhraseLibraries"/>
+      <class name="com.bms.M11.EMR.TestMyExamTemplate"/>
+      <class name="com.bms.M11.EMR.TestInterventionLibraries"/>
+      <class name="com.bms.M11.EMR.TestNoDigitalSignature"/>
+      <class name="com.bms.M11.EMR.TestNonclinicalStaffwithAllowedCheckInclinicsetupIsNotSelected"/>
+      <class name="com.bms.M11.EMR.TestNonClinicalStaffWithInsuranceClassCheckBoxNotSelectedTestCase"/>
+      <class name="com.bms.M11.EMR.TestNonoClinicalStafTestCases"/>
+      <class name="com.bms.M11.EMR.TestSignandAttachScanDocuments"/>
+      <class name="com.bms.M11.EMR.TestSignandFinalize"/>
+      <class name="com.bms.M11.EMR.TestSignandFinalizeAddendum"/>
+      <class name="com.bms.M11.EMR.TestSignNoteWithCompleteSOAPdata"/>
+      <class name="com.bms.M11.EMR.TestSignNoteWithDiffrentUsers"/>
+      <class name="com.bms.M11.EMR.TestSignNoteWithCompleteSOAPdataWithAddendum"/>
+      <class name="com.bms.M11.EMR.TestStudentProviderFinalizeTestCases"/>
+      <class name="com.bms.M11.EMR.TestStudentProviderInInsuranceClassTestCases"/>
+      <class name="com.bms.M11.EMR.TestStudentProviderwithAllowedCheckInclinicsetupIsNotSelected"/>
+      <class name="com.bms.M11.EMR.TestTreatingProviderFinalize"/>
+      <class name="com.bms.M11.EMR.TestTreatingProviderFinalizeWithAllowPTATofinalizeInInsuranceClassTestCases"/>
+      <class name="com.bms.M11.EMR.TestTreatingProviderwithAllowedCheckInclinicsetupIsNotSelected"/>
+      <class name="com.bms.M11.EMR.TestNonClinicalStaffWithInSuranceClassUnCheckedAndClinicalSetupUnChecked"/>
+      <class name="com.bms.M11.EMR.TestStudentWithInsuranceClassUnCheckedAndClinicalSetupUnChecked"/>
+      <class name="com.bms.M11.EMR.TestTreatingProviderWithInSuranceClassUnCheckedAndClinicalSetupUnChecked"/>
+      <class name="com.bms.M12.Financial.TestCheckFinancialTab"/>
+      <class name="com.bms.M13.Task.TestManageMyAccount"/>
+      <class name="com.bms.M13.Task.TestWaitList"/>
+      <class name="com.bms.M13.Task.TestEditGlobaltask"/>
+      <class name="com.bms.M13.Task.TestTaskFunctionality"/>
+      <class name="com.bms.M13.Task.TestLock"/>
+      <class name="com.bms.M13.Task.TestAssigneeField"/>
+      <class name="com.bms.M13.Task.TestAddTaskByRole"/>
+      <class name="com.bms.M13.Task.TestChangeCompany"/>
+      <class name="com.bms.M3.Cases.TestCaseHistory"/>
+      <class name="com.bms.M3.Cases.TestCaseInactive"/>
+      <class name="com.bms.M13.Task.TestLock"/>
+      <class name="com.bms.M14.PQRS.TestPQRSHardstop_2"/>
+      <class name="com.bms.M14.PQRS.TestPQRSHardstop"/>
+      <class name="com.bms.M14.PQRS.TestPQRSAvailability"/>
+      <class name="com.bms.M14.PQRS.TestPQRSprompt"/>
+      <class name="com.bms.M14.PQRS.TestPQRSVisitType"/>
+      <class name="com.bms.M15.ArrivalAlert.DifferentAppointmentTypesOnLocationView"/>
+      <class name="com.bms.M15.ArrivalAlert.TestDifferentTypeOfAppointmentsOnPracticeView"/>
+      <class name="com.bms.M15.ArrivalAlert.TestPolicyChargeQueue"/>
+      <class name="com.bms.M15.ArrivalAlert.TestArrivalAlert"/>
+      <class name="com.bms.M15.ArrivalAlert.TestGroupAppointment"/>
+      <class name="com.bms.M1.Login.TestLoginUnsuccessfull"/>
+      <class name="com.bms.M1.Login.TestValidLogin"/>
+      <class name="com.bms.M2.Patient.TestPatientAdd"/>
+      <class name="com.bms.M2.Patient.TestMedicare"/>
+      <class name="com.bms.M2.Patient.TestInactivatePatient"/>
+      <class name="com.bms.M2.Patient.TestSearchPatient"/>
+      <class name="com.bms.M2.Patient.TestPatientHeader"/>
+      <class name="com.bms.M3.Cases.TestCaseEdit"/>
+      <class name="com.bms.M3.Cases.TestCaseForInjuryType"/>
+      <class name="com.bms.M3.Cases.TestCaseHistory"/>
+      <class name="com.bms.M3.Cases.TestCaseInactive"/>
+      <class name="com.bms.M3.Cases.TestRemovingRequiredFeildsInCase"/>
+      <class name="com.bms.M3.Cases.TestCaseWithCompleteInfo"/>
+      <class name="com.bms.M3.Cases.TestCloneCase"/>
+      <class name="com.bms.M3.Cases.TestFoto"/>
+      <class name="com.bms.M4.Insurances.TestAddCompleteInsurance"/>
+      <class name="com.bms.M4.Insurances.TestAddPatientWithPrimaryinsurence"/>
+      <class name="com.bms.M4.Insurances.TestCaseInsurances"/>
+      <class name="com.bms.M4.Insurances.TestRemoveInsurance"/>
+      <class name="com.bms.M4.Insurances.TestMSPtypeForMedicareInsurance"/>
+      <class name="com.bms.M5.Notes.TestCreateNote"/>
+      <class name="com.bms.M5.Notes.TestCreateNoteNoProvider"/>
+    </classes>
+  </test> <!-- Testchrome -->
+  <test name="Testchrome(failed)">
+    <parameter name="ModuleName" value="CompleteRun"/>
+    <classes>
+      <class name="com.bms.M4.Insurances.TestCaseInsurances">
+        <methods>
+          <include name="AddInsuranceAsMedicareRailRoad"/>
+          <include name="AddInsuranceAsBlueShield"/>
+          <include name="AddInsuranceAsTricareChampus"/>
+          <include name="AddInsuranceAsWorkerCompensation"/>
+          <include name="AddInsuranceAsMedicare"/>
+        </methods>
+      </class> <!-- com.bms.M4.Insurances.TestCaseInsurances -->
+      <class name="com.bms.M11.EMR.TestNoDigitalSignature">
+        <methods>
+          <include name="NoteFinalizeWithoutDigitalSignature"/>
+          <include name="NoteFinalizeIncompleteCASE"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestNoDigitalSignature -->
+      <class name="com.bms.M11.EMR.TestSignNoteWithCompleteSOAPdataWithAddendum">
+        <methods>
+          <include name="InitialVisitWithAddendum"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestSignNoteWithCompleteSOAPdataWithAddendum -->
+      <class name="com.bms.M4.Insurances.TestAddPatientWithPrimaryinsurence">
+        <methods>
+          <include name="TestDataScriptInsurances"/>
+        </methods>
+      </class> <!-- com.bms.M4.Insurances.TestAddPatientWithPrimaryinsurence -->
+      <class name="com.bms.M11.EMR.TestSignandFinalizeAddendum">
+        <methods>
+          <include name="SignandFinalizeNoteandAddAddendum"/>
+          <include name="SignandFinalizeOverriderequiredfiels"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestSignandFinalizeAddendum -->
+      <class name="com.bms.M1.Login.TestLoginUnsuccessfull">
+        <methods>
+          <include name="TestInvalidLogin"/>
+        </methods>
+      </class> <!-- com.bms.M1.Login.TestLoginUnsuccessfull -->
+      <class name="com.bms.M3.Cases.TestFoto">
+        <methods>
+          <include name="TestFOTO"/>
+        </methods>
+      </class> <!-- com.bms.M3.Cases.TestFoto -->
+      <class name="com.bms.M11.EMR.TestSignandAttachScanDocuments">
+        <methods>
+          <include name="SignandAttachScanDocuments"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestSignandAttachScanDocuments -->
+      <class name="com.bms.M14.PQRS.TestPQRSVisitType">
+        <methods>
+          <include name="PQRSMeasuresBasedOnVisitType"/>
+          <include name="PQRSMeasuresBasedOnAge_17"/>
+          <include name="PQRSpromptHardStop_Age_Over_64"/>
+        </methods>
+      </class> <!-- com.bms.M14.PQRS.TestPQRSVisitType -->
+      <class name="com.bms.M8.FLR.TestHardStopMessagevalidation">
+        <methods>
+          <include name="TestHardStopWith97001"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.bms.M8.FLR.TestHardStopMessagevalidation -->
+      <class name="com.bms.M6.Scheduler.TestProviderHomePagetopMenu">
+        <methods>
+          <include name="FLR10thVisitValidateMedicalProgressReportvalidation"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="TestPOCexpDateDisplayFORInsuranceFlagDXPOCChangeReqAsUnchecked"/>
+          <include name="closedrivers"/>
+          <include name="TestNotesSinceMedProgdisplayifInsuranceIsMedicare"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestProviderHomePagetopMenu -->
+      <class name="com.bms.M10.SPage.TestPatientReportlibrary">
+        <methods>
+          <include name="Patient_Report_library_load"/>
+          <include name="Patient_Report_new_library_item"/>
+        </methods>
+      </class> <!-- com.bms.M10.SPage.TestPatientReportlibrary -->
+      <class name="com.bms.M15.ArrivalAlert.DifferentAppointmentTypesOnLocationView">
+        <methods>
+          <include name="TestCancelationOnLocationView"/>
+          <include name="TestGroupAppointmnetOnLocationView"/>
+          <include name="TestArrivalAppointmnetOnLocationView"/>
+          <include name="TestNoShowOnLocationView"/>
+        </methods>
+      </class> <!-- com.bms.M15.ArrivalAlert.DifferentAppointmentTypesOnLocationView -->
+      <class name="com.bms.M11.EMR.TestNonoClinicalStafTestCases">
+        <methods>
+          <include name="AllowNonclinicalstaffToFinalizeNonVisitnotes"/>
+          <include name="DONOTAlowNonClinicalStafToFinalizeVisitNotes"/>
+          <include name="AllowNonclinicalstaffToFinalizNonVisitDischargenotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestNonoClinicalStafTestCases -->
+      <class name="com.bms.M9.AddCharges.TestPayments">
+        <methods>
+          <include name="Add_Delete_Update_Payments"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestPayments -->
+      <class name="com.bms.M10.SPage.TestSPageLock">
+        <methods>
+          <include name="Lock_functionality_cancel"/>
+          <include name="Lock_functionality_Ok"/>
+        </methods>
+      </class> <!-- com.bms.M10.SPage.TestSPageLock -->
+      <class name="com.bms.M9.AddCharges.TestPermissionsAddCharges">
+        <methods>
+          <include name="PermissionByRolePracticeAdmin"/>
+          <include name="PermissionByRoleCustomerProvider"/>
+          <include name="PermissionByRoleFrontOfficeStaff"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestPermissionsAddCharges -->
+      <class name="com.bms.M6.Scheduler.TestProvierHomePage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="testProviderHomeVoidAppointmnet"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestProvierHomePage -->
+      <class name="com.bms.M6.Scheduler.TestScheduleAppointmentByView">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestScheduleAppointmentByView -->
+      <class name="com.bms.M8.FLR.TestHardStopMessagevalidation2">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M8.FLR.TestHardStopMessagevalidation2 -->
+      <class name="com.bms.M11.EMR.TestTreatingProviderWithInSuranceClassUnCheckedAndClinicalSetupUnChecked">
+        <methods>
+          <include name="AllowTreatingProviderToFINALIZENOnVisitNotes"/>
+          <include name="AllowTreatingProviderToFinalizNonVisitDischargenotes"/>
+          <include name="DONOTAlowTreatingProvideToFinalizeVisitNotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestTreatingProviderWithInSuranceClassUnCheckedAndClinicalSetupUnChecked -->
+      <class name="com.bms.M7.APage.TestAPageUpdateGoalTab">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M7.APage.TestAPageUpdateGoalTab -->
+      <class name="com.bms.M7.APage.TestAPageDischargeFLR">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M7.APage.TestAPageDischargeFLR -->
+      <class name="com.bms.M3.Cases.TestCaseWithCompleteInfo">
+        <methods>
+          <include name="AddRefPhysician"/>
+          <include name="TestShellCase"/>
+          <include name="CaseAsCompleted"/>
+          <include name="Samereferingphysicians"/>
+        </methods>
+      </class> <!-- com.bms.M3.Cases.TestCaseWithCompleteInfo -->
+      <class name="com.bms.M15.ArrivalAlert.TestPolicyChargeQueue">
+        <methods>
+          <include name="TestMutipleCancelAndNowPolicyChargeQueueApprovalForOnePatient"/>
+          <include name="TestMutipleCancelAndNowPolicyChargeQueueApprovalForMultiplePatient"/>
+          <include name="TestMutipleNoShowPolicyChargeQueueApproval"/>
+          <include name="TestMutipleCancelPolicyChargeQueueApproval"/>
+          <include name="TestNoShowPolicyChargeQueueApproval"/>
+          <include name="TestCancelPolicyChargeQueueApproval"/>
+          <include name="TestNoShowPolicyChargeQueueDeny"/>
+          <include name="TestCancelPolicyChargeQueueDeny"/>
+        </methods>
+      </class> <!-- com.bms.M15.ArrivalAlert.TestPolicyChargeQueue -->
+      <class name="com.bms.M11.EMR.TestStudentProviderFinalizeTestCases">
+        <methods>
+          <include name="DONOTAllowStudentProvidertofinalizeVisitnotes"/>
+          <include name="AllowStudentProvidertofinalizeNonVisitnotes"/>
+          <include name="AllowStudentProvidertofinalizNonVisitDischargenotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestStudentProviderFinalizeTestCases -->
+      <class name="com.bms.M13.Task.TestAssigneeField">
+        <methods>
+          <include name="Assignee_Field_Individual_Search"/>
+        </methods>
+      </class> <!-- com.bms.M13.Task.TestAssigneeField -->
+      <class name="com.bms.M11.EMR.TestNonClinicalStaffWithInSuranceClassUnCheckedAndClinicalSetupUnChecked">
+        <methods>
+          <include name="DONOTAlowNonClinicalStafToFinalizeVisitNotes"/>
+          <include name="AllowNonClinicalStaffToFINALIZENOnVisitNotes"/>
+          <include name="AllowNonclinicalstaffToFinalizNonVisitDischargenotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestNonClinicalStaffWithInSuranceClassUnCheckedAndClinicalSetupUnChecked -->
+      <class name="com.bms.M7.APage.TestAPageGCodeValidationPT">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M7.APage.TestAPageGCodeValidationPT -->
+      <class name="com.bms.M15.ArrivalAlert.TestDifferentTypeOfAppointmentsOnPracticeView">
+        <methods>
+          <include name="TestNoShowOnPracticeView"/>
+          <include name="TestArrivalAppointmnetOnPracticeView"/>
+          <include name="TestGroupAppointmnetOnPracticeView"/>
+          <include name="TestCancelationOnPracticeView"/>
+        </methods>
+      </class> <!-- com.bms.M15.ArrivalAlert.TestDifferentTypeOfAppointmentsOnPracticeView -->
+      <class name="com.bms.M15.ArrivalAlert.TestArrivalAlert">
+        <methods>
+          <include name="TestArrivalAlertPopupComeWhenAdditionalAlertsareCheckedAnDDismissFunctionality"/>
+          <include name="TestArrivalAlertDismissAllFunctionality"/>
+          <include name="TestArrivalAlertPopupDontComeWhenAdditionalAlertsareUnCheckedAndDismissFunctionality"/>
+          <include name="TestArrivalAlertPopupComeWhenAdditionalAlertsareCheckedAnDCancelFunctionality"/>
+          <include name="TestArrivalAlertIconNotPresentOnNonProviderPage"/>
+        </methods>
+      </class> <!-- com.bms.M15.ArrivalAlert.TestArrivalAlert -->
+      <class name="com.bms.M11.EMR.TestSignNoteWithCompleteSOAPdata">
+        <methods>
+          <include name="InitialVisitWithSOAP"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestSignNoteWithCompleteSOAPdata -->
+      <class name="com.bms.M6.Scheduler.TestProviderHomePageLayout">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestProviderHomePageLayout -->
+      <class name="com.bms.M5.Notes.TestCreateNote">
+        <methods>
+          <include name="ValidateVisitTypeDDL"/>
+          <include name="ValidateNonVisitTypeDDL"/>
+          <include name="SubsequentNoteVisitTypeDDL"/>
+        </methods>
+      </class> <!-- com.bms.M5.Notes.TestCreateNote -->
+      <class name="com.bms.M9.AddCharges.TestCPTCodeSearch">
+        <methods>
+          <include name="TestModifiers"/>
+          <include name="TestCPTCodesearch"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestCPTCodeSearch -->
+      <class name="com.bms.M11.EMR.TestStudentWithInsuranceClassUnCheckedAndClinicalSetupUnChecked">
+        <methods>
+          <include name="DONOTAlowStudentToFinalizeVisitNotes"/>
+          <include name="AllowStudentToFinalizNonVisitDischargenotes"/>
+          <include name="AllowStudentToFINALIZENOnVisitNotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestStudentWithInsuranceClassUnCheckedAndClinicalSetupUnChecked -->
+      <class name="com.bms.M12.Financial.TestCheckFinancialTab">
+        <methods>
+          <include name="AmountBalancingafterAddingPayment"/>
+          <include name="AmountBalancingafteraddingChargetoNewCase"/>
+          <include name="AmountBalancingafterAddingclinicalnote"/>
+          <include name="AmountBalancingafterRemovingPayment"/>
+          <include name="AmountBalancingafterEditingCharge"/>
+          <include name="AmountBalancingafterEditingCase"/>
+          <include name="AmountBalancingafterRemovingCharge"/>
+          <include name="AmountBalancingAfterAddingModifiertoCharge"/>
+          <include name="AmountBalancingafterAddingCharge"/>
+          <include name="AmountBalancingafterAddingAddendumtoClinicalnote"/>
+          <include name="AmountBalancingafterAddingNewpatient"/>
+        </methods>
+      </class> <!-- com.bms.M12.Financial.TestCheckFinancialTab -->
+      <class name="com.bms.M7.APage.TestAPageCheckFLRTab">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M7.APage.TestAPageCheckFLRTab -->
+      <class name="com.bms.M2.Patient.TestPatientAdd">
+        <methods>
+          <include name="testQuickAddPatient"/>
+          <include name="testaddpatientMandatoryfields"/>
+          <include name="testAddDuplicatePatient"/>
+          <include name="testAddPatientAllfields"/>
+        </methods>
+      </class> <!-- com.bms.M2.Patient.TestPatientAdd -->
+      <class name="com.bms.M13.Task.TestEditGlobaltask">
+        <methods>
+          <include name="MakeGlobaltaskIsAvailable"/>
+          <include name="MakeGlobaltaskIsUnavailable"/>
+        </methods>
+      </class> <!-- com.bms.M13.Task.TestEditGlobaltask -->
+      <class name="com.bms.M10.SPage.TestCaseSpageR">
+        <methods>
+          <include name="required_field_indicators_FollowupDischarge_visit"/>
+          <include name="required_field_indicators_FollowupReEvaluationvisit"/>
+          <include name="required_field_indicators_initial_visit"/>
+          <include name="required_field_indicators_Followup_visit"/>
+        </methods>
+      </class> <!-- com.bms.M10.SPage.TestCaseSpageR -->
+      <class name="com.bms.M2.Patient.TestSearchPatient">
+        <methods>
+          <include name="testQuickSearchPatient"/>
+        </methods>
+      </class> <!-- com.bms.M2.Patient.TestSearchPatient -->
+      <class name="com.bms.M11.EMR.TestStudentProviderInInsuranceClassTestCases">
+        <methods>
+          <include name="AllowStudentProvidertofinalizNonVisitDischargenotes"/>
+          <include name="AllowStudentProvidertofinalizeNonVisitnotes"/>
+          <include name="DontAllowStudentToFinalizeVisitNotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestStudentProviderInInsuranceClassTestCases -->
+      <class name="com.bms.M5.Notes.TestTemplateEMR">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M5.Notes.TestTemplateEMR -->
+      <class name="com.bms.M9.AddCharges.TestViewChargesPartnerUser">
+        <methods>
+          <include name="ValidateViewChargeUserPartner"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestViewChargesPartnerUser -->
+      <class name="com.bms.M9.AddCharges.TestViewChargesCustomerUser">
+        <methods>
+          <include name="ValidateAddChargesUserCustomer"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestViewChargesCustomerUser -->
+      <class name="com.bms.M3.Cases.TestCaseHistory">
+        <methods>
+          <include name="TestCaseHistoryWithCharges"/>
+        </methods>
+      </class> <!-- com.bms.M3.Cases.TestCaseHistory -->
+      <class name="com.bms.M9.AddCharges.TestViewChargesBMSUser">
+        <methods>
+          <include name="ValidateViewChargesUserBMS"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestViewChargesBMSUser -->
+      <class name="com.bms.M6.Scheduler.TestEditEditAllPersonSchedule">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="testEditEditAllPersonScheduleFlagIsSelected"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestEditEditAllPersonSchedule -->
+      <class name="com.bms.M3.Cases.TestCaseInactive">
+        <methods>
+          <include name="InActivateCaseNoCharges"/>
+          <include name="InActivateCaseWithCharges"/>
+        </methods>
+      </class> <!-- com.bms.M3.Cases.TestCaseInactive -->
+      <class name="com.bms.M3.Cases.TestRemovingRequiredFeildsInCase">
+        <methods>
+          <include name="RemovingCaseEffectiveDate"/>
+        </methods>
+      </class> <!-- com.bms.M3.Cases.TestRemovingRequiredFeildsInCase -->
+      <class name="com.bms.M13.Task.TestManageMyAccount">
+        <methods>
+          <include name="TestIvalidOldPassword"/>
+          <include name="TestIvalidnewAndConfirmPasswordIssame"/>
+          <include name="TestMandatoryFields"/>
+          <include name="TestDefaultView"/>
+        </methods>
+      </class> <!-- com.bms.M13.Task.TestManageMyAccount -->
+      <class name="com.bms.M14.PQRS.TestPQRSAvailability">
+        <methods>
+          <include name="PQRSMeasures"/>
+        </methods>
+      </class> <!-- com.bms.M14.PQRS.TestPQRSAvailability -->
+      <class name="com.bms.M3.Cases.TestCaseEdit">
+        <methods>
+          <include name="TestDischargedCase"/>
+          <include name="CaseEditWithAllFields"/>
+          <include name="CaseSaveWithNoInfo"/>
+        </methods>
+      </class> <!-- com.bms.M3.Cases.TestCaseEdit -->
+      <class name="com.bms.M6.Scheduler.TestScheduleMeeting">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestScheduleMeeting -->
+      <class name="com.bms.M11.EMR.TestTreatingProviderFinalize">
+        <methods>
+          <include name="AllowTreatingProvidertofinalizNonVisitDischargenotes"/>
+          <include name="AllowTreatingProvidertofinalizeNonVisitnotes"/>
+          <include name="DONOTAllowTreatingProvidertofinalizeVisitnotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestTreatingProviderFinalize -->
+      <class name="com.bms.M2.Patient.TestInactivatePatient">
+        <methods>
+          <include name="testInactivatePatinetwithNoActiveCharges"/>
+        </methods>
+      </class> <!-- com.bms.M2.Patient.TestInactivatePatient -->
+      <class name="com.bms.M5.Notes.TestCreateNoteWarningMessage">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="Note_Unlock"/>
+          <include name="closedrivers"/>
+          <include name="ValidateNoteMandtoryfields"/>
+        </methods>
+      </class> <!-- com.bms.M5.Notes.TestCreateNoteWarningMessage -->
+      <class name="com.bms.M6.Scheduler.TestScheduleMeetingByView">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestScheduleMeetingByView -->
+      <class name="com.bms.M8.FLR.TestFLRdataCarryForward1">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M8.FLR.TestFLRdataCarryForward1 -->
+      <class name="com.bms.M8.FLR.TestFLRdataCarryForward2">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M8.FLR.TestFLRdataCarryForward2 -->
+      <class name="com.bms.M6.Scheduler.TestScheduleAppointment">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestScheduleAppointment -->
+      <class name="com.bms.M7.APage.TestAPageEditPendingNote">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M7.APage.TestAPageEditPendingNote -->
+      <class name="com.bms.M9.AddCharges.TestValidateKxModifierPrompt">
+        <methods>
+          <include name="ValidateKxModifierPrompt"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestValidateKxModifierPrompt -->
+      <class name="com.bms.M11.EMR.TestStudentProviderwithAllowedCheckInclinicsetupIsNotSelected">
+        <methods>
+          <include name="AllowStudentToFINALIZENOnVisitNotes"/>
+          <include name="AllowStudentToFinalizNonVisitDischargenotes"/>
+          <include name="DONOTAlowStudentToFinalizeVisitNotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestStudentProviderwithAllowedCheckInclinicsetupIsNotSelected -->
+      <class name="com.bms.M11.EMR.TestTreatingProviderwithAllowedCheckInclinicsetupIsNotSelected">
+        <methods>
+          <include name="DONOTAlowTreatingProvideToFinalizeVisitNotes"/>
+          <include name="AllowTreatingProviderToFINALIZENOnVisitNotes"/>
+          <include name="AllowTreatingProviderToFinalizNonVisitDischargenotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestTreatingProviderwithAllowedCheckInclinicsetupIsNotSelected -->
+      <class name="com.bms.M7.APage.TestAPageLockFunctionality">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M7.APage.TestAPageLockFunctionality -->
+      <class name="com.bms.M2.Patient.TestPatientHeader">
+        <methods>
+          <include name="TestAddDuplicateInterventionLibrary"/>
+          <include name="TestValidatePatientHeader1"/>
+          <include name="TestValidatePatientHeader4"/>
+          <include name="TestValidatePatientHeader3"/>
+          <include name="TestValidatePatientHeader2"/>
+        </methods>
+      </class> <!-- com.bms.M2.Patient.TestPatientHeader -->
+      <class name="com.bms.M6.Scheduler.TestProviderHomePageNoteStatusColor">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="testProviderHomeScheduleAppointmnet"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestProviderHomePageNoteStatusColor -->
+      <class name="com.bms.M8.FLR.TestFLR10THVisitPromtWithAddendum">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M8.FLR.TestFLR10THVisitPromtWithAddendum -->
+      <class name="com.bms.M8.FLR.TestCreateCompleteNote">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M8.FLR.TestCreateCompleteNote -->
+      <class name="com.bms.M2.Patient.TestMedicare">
+        <methods>
+          <include name="testQuickAddPatientwithBlankMedicareErrorMessage"/>
+        </methods>
+      </class> <!-- com.bms.M2.Patient.TestMedicare -->
+      <class name="com.bms.M9.AddCharges.TestValidateErrorMessageAddCharges">
+        <methods>
+          <include name="ValidateMandatoryFieldsAddCharges"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestValidateErrorMessageAddCharges -->
+      <class name="com.bms.M6.Scheduler.TestScheduleFutureAppointment">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestScheduleFutureAppointment -->
+      <class name="com.bms.M14.PQRS.TestPQRSHardstop">
+        <methods>
+          <include name="PQRS_HardStop_ViewPastData_PT"/>
+        </methods>
+      </class> <!-- com.bms.M14.PQRS.TestPQRSHardstop -->
+      <class name="com.bms.M14.PQRS.TestPQRSprompt">
+        <methods>
+          <include name="PQRSpromptHardStop"/>
+        </methods>
+      </class> <!-- com.bms.M14.PQRS.TestPQRSprompt -->
+      <class name="com.bms.M3.Cases.TestCloneCase">
+        <methods>
+          <include name="testCloneExistingCase"/>
+          <include name="testCloneIncompleteActiveCase"/>
+          <include name="testCloneCompleteActiveCase"/>
+        </methods>
+      </class> <!-- com.bms.M3.Cases.TestCloneCase -->
+      <class name="com.bms.M13.Task.TestAddTaskByRole">
+        <methods>
+          <include name="CreateTaskUserCustomer"/>
+          <include name="CreateTaskUserBMS"/>
+          <include name="CreateTaskUserSysAdmin"/>
+          <include name="CreateTaskUserPartner"/>
+          <include name="Task_Required_Field_Validation"/>
+        </methods>
+      </class> <!-- com.bms.M13.Task.TestAddTaskByRole -->
+      <class name="com.bms.M4.Insurances.TestMSPtypeForMedicareInsurance">
+        <methods>
+          <include name="MSPtypeInSecondaryInsurance"/>
+          <include name="MSPtypeInTertiaryInsurance"/>
+        </methods>
+      </class> <!-- com.bms.M4.Insurances.TestMSPtypeForMedicareInsurance -->
+      <class name="com.bms.M15.ArrivalAlert.TestGroupAppointment">
+        <methods>
+          <include name="TestMaximumPatientAllowedInGroupAppointment"/>
+          <include name="TestEditGroupAppointment"/>
+          <include name="TestReoccurrenceOfGroupAppointment"/>
+          <include name="TestCancelationOfGroupAppointment"/>
+          <include name="TestCreationOfGroupAppointment"/>
+          <include name="TestNoShowOfGroupAppointment"/>
+          <include name="TestSelectedCancelationReasonShouldBeVisible"/>
+        </methods>
+      </class> <!-- com.bms.M15.ArrivalAlert.TestGroupAppointment -->
+      <class name="com.bms.M11.EMR.TestNonClinicalStaffWithInsuranceClassCheckBoxNotSelectedTestCase">
+        <methods>
+          <include name="DontAllowNonClinicalStaffToFinalizeVisitNotes"/>
+          <include name="AllowNonClinicalStaffofinalizeNonVisitnotes"/>
+          <include name="AllowNonClinicalStafftofinalizNonVisitDischargenotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestNonClinicalStaffWithInsuranceClassCheckBoxNotSelectedTestCase -->
+      <class name="com.bms.M11.EMR.TestPhraseLibraries">
+        <methods>
+          <include name="TestPatientReportLibrary"/>
+          <include name="TestGoalsLibrary"/>
+          <include name="TestTreatmentPlanLibrary"/>
+          <include name="TestExaminationCommentsLibrary"/>
+          <include name="TestNegativePrognosisLibrary"/>
+          <include name="TestPositivePrognosisLibrary"/>
+          <include name="TestAssessmentPhraseLibraries"/>
+          <include name="TestProblemsLibraries"/>
+          <include name="TestRehabPotentialComments"/>
+          <include name="TestDiagnosticObservationLibrary"/>
+          <include name="TestFLRJustificationLibrary"/>
+          <include name="TestNonVisitLibrary"/>
+          <include name="TestThreapyCapExceptionJustification"/>
+          <include name="TestMedicationCommentsLibrary"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestPhraseLibraries -->
+      <class name="com.bms.M6.Scheduler.TestRecurringAppointment">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestRecurringAppointment -->
+      <class name="com.bms.M7.APage.TestAPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M7.APage.TestAPage -->
+      <class name="com.bms.M11.EMR.TestInterventionLibraries">
+        <methods>
+          <include name="Add_Edit_Delete_InterventionLibraries"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestInterventionLibraries -->
+      <class name="com.bms.M5.Notes.TestCreateNoteNoProvider">
+        <methods>
+          <include name="ValidateBodyPartsList"/>
+          <include name="UserdontHaveRightToCreateNote"/>
+          <include name="create_note_from_provider_home_page"/>
+        </methods>
+      </class> <!-- com.bms.M5.Notes.TestCreateNoteNoProvider -->
+      <class name="com.bms.M14.PQRS.TestPQRSHardstop_2">
+        <methods>
+          <include name="PQRS_HardStop_ViewPastData_64"/>
+        </methods>
+      </class> <!-- com.bms.M14.PQRS.TestPQRSHardstop_2 -->
+      <class name="com.bms.M13.Task.TestLock">
+        <methods>
+          <include name="TestLockFunctionality"/>
+        </methods>
+      </class> <!-- com.bms.M13.Task.TestLock -->
+      <class name="com.bms.M11.EMR.TestSignandFinalize">
+        <methods>
+          <include name="SignandFinalizeWithPTuser"/>
+          <include name="SignandFinalizeWithFollowupVisit"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestSignandFinalize -->
+      <class name="com.bms.M8.FLR.TestFLRTabNotDisplayRTProvider">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M8.FLR.TestFLRTabNotDisplayRTProvider -->
+      <class name="com.bms.M11.EMR.TestMyExamTemplate">
+        <methods>
+          <include name="Add_Edit_Delete_MyExamTemplate"/>
+          <include name="LinkMyExamTemplate"/>
+          <include name="AddPublicMyExamTemplate"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestMyExamTemplate -->
+      <class name="com.bms.M7.APage.TestAPageGCodeValidationOT">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M7.APage.TestAPageGCodeValidationOT -->
+      <class name="com.bms.M8.FLR.TestHardStopMessagevalidation3">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M8.FLR.TestHardStopMessagevalidation3 -->
+      <class name="com.bms.M9.AddCharges.TestViewChargesClinicUser">
+        <methods>
+          <include name="ValidateViewChargeUserClinical"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestViewChargesClinicUser -->
+      <class name="com.bms.M8.FLR.TestFLR10THVisitPromtNoAddendum">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M8.FLR.TestFLR10THVisitPromtNoAddendum -->
+      <class name="com.bms.M9.AddCharges.TestPaymentDropDowns">
+        <methods>
+          <include name="DefaultPaymentCodeWithAmountTocollect_FrontOfficeStaffUser"/>
+          <include name="DefaultPaymentCodeWithAmountTocollect_PartnerUser"/>
+          <include name="DefaultPaymentCodeWithAmountTocollect_BMSUSER"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestPaymentDropDowns -->
+      <class name="com.bms.M9.AddCharges.TestAddChargesWithDXChanges">
+        <methods>
+          <include name="TestProcCodeReplacementforManuallyenteredchargefor97001forDOS1_1_2017andLATER"/>
+          <include name="TestReleasePendingCharges"/>
+          <include name="TestEDITCharge_withNEWdx"/>
+          <include name="TestEDITvisitwithDifferentDxPointer"/>
+          <include name="TestChargeswithEvalcodesforDOS12_31_2016andearlier"/>
+          <include name="TestChargeswithReEvalcodesforDOS12_31_2016andearlier"/>
+          <include name="TestADDchargewithDifferentDxPointer"/>
+          <include name="TestADDchargewithNewDX"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestAddChargesWithDXChanges -->
+      <class name="com.bms.M6.Scheduler.TestRecurringMeeting">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M6.Scheduler.TestRecurringMeeting -->
+      <class name="com.bms.M13.Task.TestWaitList">
+        <methods>
+          <include name="TestDeletePatientformWaitList"/>
+          <include name="TestSavingWithOutEnteringData"/>
+          <include name="TestAddingPatientToWaitList"/>
+        </methods>
+      </class> <!-- com.bms.M13.Task.TestWaitList -->
+      <class name="com.bms.M7.APage.TestAPageDropDownValidations">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M7.APage.TestAPageDropDownValidations -->
+      <class name="com.bms.M9.AddCharges.TestDeafults">
+        <methods>
+          <include name="DefaultSelectionWithCase"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestDeafults -->
+      <class name="com.bms.M11.EMR.TestTreatingProviderFinalizeWithAllowPTATofinalizeInInsuranceClassTestCases">
+        <methods>
+          <include name="AllowTreatingProvidertofinalizNonVisitDischargenotes"/>
+          <include name="AllowTreatingProviderToFinalizeVisitNotes"/>
+          <include name="AllowTreatingProvidertofinalizeNonVisitnotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestTreatingProviderFinalizeWithAllowPTATofinalizeInInsuranceClassTestCases -->
+      <class name="com.bms.M4.Insurances.TestAddCompleteInsurance">
+        <methods>
+          <include name="AddCompleteTertiaryInsurance"/>
+          <include name="AddCompletePrimaryInsurance"/>
+          <include name="AddCompleteSecondaryInsurance"/>
+        </methods>
+      </class> <!-- com.bms.M4.Insurances.TestAddCompleteInsurance -->
+      <class name="com.bms.M13.Task.TestChangeCompany">
+        <methods>
+          <include name="ToValidatePatientIsAssociatedWithOneCompany"/>
+          <include name="ProviderLinkwithDifferentCompanies"/>
+        </methods>
+      </class> <!-- com.bms.M13.Task.TestChangeCompany -->
+      <class name="com.bms.M13.Task.TestTaskFunctionality">
+        <methods>
+          <include name="AddTaskGroupWithNoUsers"/>
+        </methods>
+      </class> <!-- com.bms.M13.Task.TestTaskFunctionality -->
+      <class name="com.bms.M9.AddCharges.TestValidatePre_AuthCounter">
+        <methods>
+          <include name="ValidatePreAuthValuesAddchargeDropdown"/>
+          <include name="TestPlanofcareexpired"/>
+          <include name="TestProviderPOSLink"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestValidatePre_AuthCounter -->
+      <class name="com.bms.M3.Cases.TestCaseForInjuryType">
+        <methods>
+          <include name="InjuryTypeAsOther"/>
+        </methods>
+      </class> <!-- com.bms.M3.Cases.TestCaseForInjuryType -->
+      <class name="com.bms.M9.AddCharges.TestAddAccountNotes">
+        <methods>
+          <include name="AddAccountNotesPatientHeader"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestAddAccountNotes -->
+      <class name="com.bms.M8.FLR.TestFLR10THVisitPromtAllNotesFinalized">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M8.FLR.TestFLR10THVisitPromtAllNotesFinalized -->
+      <class name="com.bms.M1.Login.TestValidLogin">
+        <methods>
+          <include name="testvalidlogin"/>
+          <include name="testHyperlinks"/>
+        </methods>
+      </class> <!-- com.bms.M1.Login.TestValidLogin -->
+      <class name="com.bms.M11.EMR.TestNonclinicalStaffwithAllowedCheckInclinicsetupIsNotSelected">
+        <methods>
+          <include name="DONOTAlowNonClinicalStafToFinalizeVisitNotes"/>
+          <include name="AllowNonclinicalstaffToFinalizNonVisitDischargenotes"/>
+          <include name="AllowNonClinicalStaffToFINALIZENOnVisitNotes"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestNonclinicalStaffwithAllowedCheckInclinicsetupIsNotSelected -->
+      <class name="com.bms.M9.AddCharges.TestPatientRefund">
+        <methods>
+          <include name="PatientRefund"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestPatientRefund -->
+      <class name="com.bms.M4.Insurances.TestRemoveInsurance">
+        <methods>
+          <include name="testremovePrimaryInsurance"/>
+          <include name="testremoveSecondaryInsurance"/>
+          <include name="testremoveTertiaryInsurance"/>
+        </methods>
+      </class> <!-- com.bms.M4.Insurances.TestRemoveInsurance -->
+      <class name="com.bms.M11.EMR.TestSignNoteWithDiffrentUsers">
+        <methods>
+          <include name="SignNotewithPTUser"/>
+          <include name="SignNotewithRTUser"/>
+          <include name="SignNotewithTreatingproviderUser"/>
+          <include name="SignNotewithCustomerUser"/>
+          <include name="SignNotewithNonclinicalstaffUser"/>
+          <include name="SignNotewithFrontOfficeStaffUser"/>
+          <include name="SignNotewithOTUser"/>
+          <include name="SignNotewithStudentproviderUser"/>
+          <include name="SignNotewithSLPUser"/>
+          <include name="SignNotewithPartnerUser"/>
+        </methods>
+      </class> <!-- com.bms.M11.EMR.TestSignNoteWithDiffrentUsers -->
+      <class name="com.bms.M9.AddCharges.TestInsOverpayment">
+        <methods>
+          <include name="AddPaymentsTransactionType"/>
+        </methods>
+      </class> <!-- com.bms.M9.AddCharges.TestInsOverpayment -->
+      <class name="com.bms.M7.APage.TestAPageCurrentStatusList">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closedrivers"/>
+        </methods>
+      </class> <!-- com.bms.M7.APage.TestAPageCurrentStatusList -->
+    </classes>
+  </test> <!-- Testchrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

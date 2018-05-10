@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+        <listener class-name="ReportUtils.RetryListener"/>
+  </listeners>
+  
+   <parameter name="browsername" value="chrome" />
+  <test name="Testchrome">
+ 
+   <parameter name="ModuleName" value="Task" />
+  
+    <classes>
+     
+       <class name="com.bms.M13.Task.TestManageMyAccount" /> 
+       <class name="com.bms.M13.Task.TestWaitList" /> 
+       <class name="com.bms.M13.Task.TestEditGlobaltask"/> 
+       <class name="com.bms.M13.Task.TestTaskFunctionality"/> 
+       <class name="com.bms.M13.Task.TestAssigneeField"/> 
+       <class name="com.bms.M13.Task.TestAddTaskByRole"/> 
+       <class name="com.bms.M13.Task.TestChangeCompany"/>
+       <class name="com.bms.M3.Cases.TestCaseHistory" />
+	   <class name="com.bms.M3.Cases.TestCaseInactive" />
+	   <class name="com.bms.M13.Task.TestLock"/>
+		
+		</classes>
+  </test>
+  <!-- Test -->
+</suite> <!-- Suite -->

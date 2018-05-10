@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="ReportUtils.RetryListener" />
+	</listeners>
+
+<parameter name="browsername" value="chrome" />
+	<test name="Testchrome">
+		
+                <parameter name="ModuleName" value="APage" />
+
+		<classes> 
+		
+		<class name="com.bms.M7.APage.TestAPageEditPendingNote"/>
+		<class name="com.bms.M7.APage.TestAPage"/>
+		<class name="com.bms.M7.APage.TestAPageCheckFLRTab"/>
+		<class name="com.bms.M7.APage.TestAPageCurrentStatusList"/>
+		<class name="com.bms.M7.APage.TestAPageDischargeFLR"/>
+		<class name="com.bms.M7.APage.TestAPageDropDownValidations"/>
+		<class name="com.bms.M7.APage.TestAPageGCodeValidationOT"/>
+		<class name="com.bms.M7.APage.TestAPageGCodeValidationPT"/>
+		<class name="com.bms.M7.APage.TestAPageUpdateGoalTab"/>
+		<class name="com.bms.M7.APage.TestAPageLockFunctionality"/>
+	</classes>
+</test> 
+
+
+
+<!-- Test -->
+</suite> <!-- Suite -->

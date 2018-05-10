@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+		<listener class-name="ReportUtils.RetryListener" />
+	</listeners>
+
+  <parameter name="browsername" value="safari" />
+    <test name="Testsafari">
+    
+    <parameter name="ModuleName" value="SafariTest" />
+		
+
+		<classes> 
+	
+		<class name="TestScripts.TestTemplateEMR" />
+		<class name="TestScripts.TestCreateNote" />
+		<class name="TestScripts.TestCreateNoteWarningMessage"/>
+		<class name="TestScripts.TestCreateNoteNoProvider"/>
+		<class name="TestScripts.TestScheduleAppointment" />
+		<class name="TestScripts.TestScheduleAppointmentByView" />
+		<class name="TestScripts.TestScheduleFutureAppointment" />
+		<class name="TestScripts.TestScheduleMeeting" />		
+		<class name="TestScripts.TestValidLogin" />
+		<class name="TestScripts.TestRemoveInsurance" />
+		<class name="TestScripts.TestPatientAdd" />
+		<class name="TestScripts.TestCaseForInjuryType" />
+		<class name="TestScripts.TestInactivatePatient" />		
+		<class name="TestScripts.TestRemovingRequiredFeildsInCase" />
+		<class name="TestScripts.TestSearchPatient" />
+		<class name="TestScripts.TestLoginUnsuccessfull" />
+		<class name="TestScripts.TestCaseWithCompleteInfo" />
+		<class name="TestScripts.TestMSPtypeForMedicareInsurance" />
+		<class name="TestScripts.TestCaseEdit" />
+		<class name="TestScripts.TestCaseInsurances" />
+		<class name="TestScripts.TestMedicare" />
+		<class name="TestScripts.TestCloneCase" />
+		<class name="TestScripts.TestAddCompleteInsurance" />  
+		<!-- <class name="TestScripts.TestScheduleMeetingByView" />/* this test case note supported on safari hence kept it comment for now-->
+
+	</classes>
+</test>
+  
+ 
+   <!-- Test -->
+</suite> <!-- Suite -->

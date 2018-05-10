@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="ReportUtils.RetryListener" />
+	</listeners>
+
+    <parameter name="browsername" value="chrome" />
+	<test name="Testchrome">
+		
+                <parameter name="ModuleName" value="Case" />
+
+		<classes> 			
+		<class name="com.bms.M3.Cases.TestCaseEdit" />
+		<class name="com.bms.M3.Cases.TestCaseForInjuryType" />
+		<class name="com.bms.M3.Cases.TestCaseHistory" />
+		<class name="com.bms.M3.Cases.TestCaseInactive" />
+		<class name="com.bms.M3.Cases.TestRemovingRequiredFeildsInCase" />
+		<class name="com.bms.M3.Cases.TestCaseWithCompleteInfo" />	
+		<class name="com.bms.M3.Cases.TestCloneCase" />
+		<class name="com.bms.M3.Cases.TestFoto"/>
+	</classes>
+</test> 
+
+
+
+<!-- Test -->
+</suite> <!-- Suite -->
