@@ -18,6 +18,13 @@
         <include name="testValidateNewCaseAppointment" />
         </methods>
         </class>
+        <class name="com.bms.M6.Scheduler.TestScheduleMeeting">
+        <methods>
+        <include name="QuickScheduleMeeting" />
+        <include name="CancelAppointment" />
+         <include name="NoShowAppointment" /> 
+        </methods>
+        </class>
         <class name="com.bms.M3.Cases.TestCaseEdit">
         <methods>
         <include name="CaseSaveWithNoInfo" />       

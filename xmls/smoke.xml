@@ -4,14 +4,13 @@
   <!-- <listeners>
         <listener class-name="ReportUtils.RetryListener"/>
   </listeners> -->
-   <parameter name="browsername" value="chrome" /> 
+   <parameter name="browsername" value="firefox" /> 
   <test name="Testchrome">
   
   <parameter name="ModuleName" value="Smoke" />
   
     <classes>
-        <class name="com.bms.M1.Login.TestValidLogin" /> 
-        <class name="com.bms.M1.Login.TestLoginUnsuccessfull" />
+        <class name="com.bms.M1.Login.TestLogin" /> 
        <!--  <class name="com.bms.M6.Scheduler.TestScheduleAppointment">
         <methods>
         <include name="testQuickSchedule" />

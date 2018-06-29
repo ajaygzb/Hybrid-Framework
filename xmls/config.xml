@@ -3,7 +3,7 @@
   <configuration>
     <!-- report theme -->
     <!-- standard, dark -->
-    <theme>standard</theme>
+    <theme>dark</theme>
   
     <!-- document encoding -->
     <!-- defaults to UTF-8 -->
@@ -14,10 +14,10 @@
     <protocol></protocol>
     
     <!-- title of the document -->
-    <documentTitle>ExtentReports</documentTitle>
+    <documentTitle>BMS ExtentReports</documentTitle>
     
     <!-- report name - displayed at top-nav -->
-    <reportName>Automation Report</reportName>
+    <reportName>RevFlow Automation Report</reportName>
     
     <!-- report headline - displayed at top-nav, after reportHeadline -->
     <reportHeadline>RevFlow</reportHeadline>

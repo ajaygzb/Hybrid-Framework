@@ -2,7 +2,8 @@ package PerformanceTest;
 
 import java.util.List;
 import java.util.Random;
-import org.apache.commons.lang3.RandomStringUtils;
+
+import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;

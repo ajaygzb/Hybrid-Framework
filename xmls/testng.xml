@@ -9,19 +9,13 @@
 		<parameter name="ModuleName" value="testng" />
 
 		<classes>
- <class name="com.bms.M11.EMR.TestNonclinicalStaffwithAllowedCheckInclinicsetupIsNotSelected"/>
-  <class name="com.bms.M11.EMR.TestNonClinicalStaffWithInsuranceClassCheckBoxNotSelectedTestCase"/>
-   <class name="com.bms.M11.EMR.TestNonoClinicalStafTestCases"/>
-    <class name="com.bms.M11.EMR.TestSignandAttachScanDocuments"/>
-     <class name="com.bms.M11.EMR.TestStudentProviderFinalizeTestCases"/>
-      <class name="com.bms.M11.EMR.TestStudentProviderInInsuranceClassTestCases"/>
-       <class name="com.bms.M11.EMR.TestStudentProviderwithAllowedCheckInclinicsetupIsNotSelected"/>
-        <class name="com.bms.M11.EMR.TestTreatingProviderFinalize"/>
-        <class name="com.bms.M11.EMR.TestTreatingProviderFinalizeWithAllowPTATofinalizeInInsuranceClassTestCases"/>
-        <class name="com.bms.M11.EMR.TestNonClinicalStaffWithInSuranceClassUnCheckedAndClinicalSetupUnChecked"/>
-        <class name="com.bms.M11.EMR.TestStudentWithInsuranceClassUnCheckedAndClinicalSetupUnChecked"/>
-        <class name="com.bms.M11.EMR.TestTreatingProviderWithInSuranceClassUnCheckedAndClinicalSetupUnChecked"/>
-       
+<class name="com.bms.M3.Cases.TestCaseEdit">
+        <methods>
+        <include name="CaseSaveWithNoInfo" />       
+        </methods>
+        </class>
+
+
 </classes>
 </test> 
 

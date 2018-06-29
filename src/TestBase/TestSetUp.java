@@ -195,7 +195,7 @@ public class TestSetUp implements IRetryAnalyzer {
 				FirefoxProfile fp = new FirefoxProfile();
 				fp.setPreference("webdriver.load.strategy", "unstable");
 				System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver.exe");
-				driver = new FirefoxDriver(fp);
+				driver = new FirefoxDriver();
 				ClearBrowserCache();
 				caps = DesiredCapabilities.firefox();
 				System.out.println(caps.getBrowserName());
